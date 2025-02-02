@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages Box */
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Styles */
+.message {
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  max-width: 75%;
+}
+
+.sent {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.received {
+  background: #ddd;
+  color: black;
+  align-self: flex-start;
+}
+
+/* Message Input */
+.input-container {
+  display: flex;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Send Button */
+#send-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+#send-btn:hover {
+  background: #0056b3;
+}
